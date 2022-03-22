@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       }]
     })
-  .then(dbUserData => res.json(dbUserData))
+  .then(data => res.json(data))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -34,12 +34,12 @@ router.get('/:id', (req, res) => {
       }
    ]
   })
-    .then(dbUserData => {
-      if (!dbUserData) {
+    .then(data => {
+      if (!data) {
         res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbUserData);
+      res.json(data);
     })
     .catch(err => {
       console.log(err);
@@ -66,12 +66,12 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(dbUserData => {
-      if (!dbUserData[0]) {
+    .then(data => {
+      if (!data[0]) {
         res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbUserData);
+      res.json(data);
     })
     .catch(err => {
       console.log(err);
@@ -85,13 +85,12 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  })
-    .then(dbUserData => {
-      if (!dbUserData) {
+  }) .then(data => {
+      if (!data) {
         res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbUserData);
+      res.json(data);
     })
     .catch(err => {
       console.log(err);

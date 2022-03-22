@@ -6,13 +6,19 @@ Github Link: https://github.com/camilleNicoleT/ecommerce_cli
 The User can track and update retail items and information from their command line!
 
 ## Table of Contents:
-   - [Installation](#installation) , - [Usage](#usage) 
+   - [Installation](#installation) 
+   - [Usage](#usage) 
+   - [Questions](#Questions) 
 
 ## Installation 
-  First clone the github repository. Once cloned cd into the root folder. Type "node server.js" to start the app
+  1) Clone the github repository
+  2) Once cloned cd into the root folder and run npm i in command line
+  3) Next seed data by typing node seeds/index.js
+  4) Add your mysql username and pass in the .env file
+  5) Type "node server.js" to start the app
 
 ## Usage
-  Creating a table of retail product items and tracking their price, how much in stock with relation to category and tag ids.
+  Receive data of retail product items and tracking their price, how much in stock with relation to category and tag ids.
 
 
 ## Questions
