@@ -1,6 +1,7 @@
 # E-commerce APP
-Demonstration Video: 
-Github Link: https://github.com/camilleNicoleT/ecommerce_cli
+Demonstration Video: https://drive.google.com/file/d/1UPr3z1dEBoLrCRDaprnl33rhDE7JIxCG/viewGithub 
+
+Link: https://github.com/camilleNicoleT/ecommerce_cli
 
 ## Description
 The User can track and update retail items and information from their command line!
